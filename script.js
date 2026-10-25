@@ -7,7 +7,7 @@
   var caT=document.getElementById('ca-text');caT.textContent=C.contract||'Coming soon';
   function toast(t){var d=document.createElement('div');d.className='toast';d.textContent=t;document.body.appendChild(d);setTimeout(function(){d.remove()},1800);}
   document.getElementById('ca-copy').addEventListener('click',function(){
-    var v=caT.textContent;if(/coming soon/i.test(v)){toast('CA coming soon - stay tuned!');return;}
+    var v=caT.textContent;if(/13oMb1i2tTNo9Vj3Z9BWgoRjHwZygQ1xWXEa4DoCpump/i.test(v)){toast('CA 13oMb1i2tTNo9Vj3Z9BWgoRjHwZygQ1xWXEa4DoCpump - stay tuned!');return;}
     (navigator.clipboard?navigator.clipboard.writeText(v):Promise.reject()).then(function(){toast('CA copied!')},function(){toast(v)});
   });
   document.getElementById('yr').textContent=new Date().getFullYear();
