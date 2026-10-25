@@ -17,11 +17,11 @@
      SITE CONFIG - edit these values to update every link/button
      ========================================================= */
   window.LMAO_CONFIG = {
-    telegram:    "https://t.me/lmaomeme_sol",                       // e.g. https://t.me/yourgroup
-    twitter:     "https://x.com/lmaomeme_sol",                        // e.g. https://x.com/yourhandle
-    dexscreener: "https://dexscreener.com/solana/TBA",  // e.g. https://dexscreener.com/solana/<pair>
-    buy:         "https://swap.pump.fun/?input=So11111111111111111111111111111111111111112&output=TBA",                // e.g. pump.fun or Raydium swap link
-    contract:    "TBA"                      // paste the mint address here at launch
+    telegram:    "#telegram",                       // e.g. https://t.me/yourgroup
+    twitter:     "#twitter",                        // e.g. https://x.com/yourhandle
+    dexscreener: "https://dexscreener.com/solana",  // e.g. https://dexscreener.com/solana/<pair>
+    buy:         "https://pump.fun",                // e.g. pump.fun or Raydium swap link
+    contract:    "Coming soon"                      // paste the mint address here at launch
   };
 </script>
 </head>
@@ -41,7 +41,7 @@
     <symbol id="i-close" viewBox="0 0 24 24"><path stroke="currentColor" stroke-width="3" stroke-linecap="round" d="M5 5l14 14M19 5 5 19"/></symbol>
     <symbol id="i-arrow" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" d="M15 5l-7 7 7 7"/></symbol>
     <symbol id="i-drop" viewBox="0 0 24 24"><path fill="currentColor" d="M12 2s7 8 7 13a7 7 0 0 1-14 0c0-5 7-13 7-13z"/></symbol>
-  </defs> 
+  </defs>
 </svg>
 
 <div class="speedlines" aria-hidden="true"></div>
@@ -58,10 +58,8 @@
 
 <main id="top">
 <section class="hero">
-  <div class="hero-banner reveal"><img src="assets/banner.jpg" alt="Large Milkers All Over banner"></div>
   <div class="hero-grid">
-    <div class="hero-logo reveal tilt"><img src="assets/logo.png" alt="$LMAO! mascot holding a splashing glass of milk"><span class="sticker">ON SOLANA</span></div>
-    <div class="hero-copy reveal">
+        <div class="hero-copy reveal">
       <p class="kicker"><svg><use href="#i-sol"/></svg> The official Solana meme token</p>
       <h1 class="wobble" data-text="Large Milkers All Over">Large Milkers All Over</h1>
       <p class="symbol">$LMAO!</p>
@@ -74,13 +72,20 @@
         <a class="btn btn-ghost" data-link="dexscreener" href="#" target="_blank" rel="noopener"><svg><use href="#i-dex"/></svg>DexScreener</a>
       </div>
     </div>
+    <div class="hero-pose" id="heroPose">
+      <svg class="splash" viewBox="0 0 400 400" aria-hidden="true"><path fill="#fffdf4" stroke="#0d0d0d" stroke-width="6" d="M200 30c40 0 50 40 85 35s60 30 50 65 40 50 20 85-5 70-45 80-50 50-90 45-60 25-90-5-75-20-80-60-40-50-25-90-10-65 25-85 50-15 75-40 35-30 75-30z"/><circle cx="350" cy="80" r="16" fill="#fffdf4" stroke="#0d0d0d" stroke-width="5"/><circle cx="50" cy="330" r="12" fill="#fffdf4" stroke="#0d0d0d" stroke-width="5"/></svg>
+      <img class="pose" src="assets/poses/pose1.png" alt="$LMAO! mascot raising a splashing glass of milk" width="733" height="1400">
+      <span class="sticker">ON SOLANA</span>
+    </div>
   </div>
+  <div class="hero-banner reveal tilt"><img src="assets/banner.jpg" alt="Large Milkers All Over banner"></div>
   <svg class="drip" viewBox="0 0 1440 120" preserveAspectRatio="none" aria-hidden="true"><path fill="#fffdf4" d="M0 0h1440v40c-40 0-50 60-80 60s-30-50-70-50-40 70-90 70-40-60-90-60-60 30-100 30-40-50-90-50-50 80-100 80-40-70-90-70-50 40-100 40-50-60-100-60-60 50-110 50-40-40-90-40-50 70-100 70-40-60-90-60-60 40-100 40S80 40 0 40z"/></svg>
 </section>
 
 <div class="marquee" aria-hidden="true"><div class="track"><span>$LMAO! LARGE MILKERS ALL OVER</span><svg><use href="#i-drop"/></svg><span>$LMAO! LARGE MILKERS ALL OVER</span><svg><use href="#i-drop"/></svg><span>$LMAO! LARGE MILKERS ALL OVER</span><svg><use href="#i-drop"/></svg><span>$LMAO! LARGE MILKERS ALL OVER</span><svg><use href="#i-drop"/></svg><span>$LMAO! LARGE MILKERS ALL OVER</span><svg><use href="#i-drop"/></svg><span>$LMAO! LARGE MILKERS ALL OVER</span><svg><use href="#i-drop"/></svg></div></div>
 
-<section class="section milk" id="about">
+<section class="section milk edge" id="about">
+  <img class="edge-pose right" src="assets/poses/pose3.png" alt="" width="640" height="1400" loading="lazy">
   <div class="wrap about">
     <div class="reveal">
       <h2 class="title">What is <em>$LMAO!</em>?</h2>
@@ -104,7 +109,8 @@
   </div>
 </section>
 
-<section class="section dark" id="buy">
+<section class="section dark edge" id="buy">
+  <img class="edge-pose left" src="assets/poses/pose2.png" alt="" width="996" height="1389" loading="lazy">
   <div class="wrap">
     <h2 class="title center reveal light">How to <em>Buy</em></h2>
     <div class="steps">
@@ -127,10 +133,12 @@
       <div class="tok-card tilt reveal"><small>Liquidity</small><strong>Burned</strong><span>placeholder</span></div>
       <div class="tok-card tilt reveal"><small>Mint &amp; Freeze</small><strong>Revoked</strong><span>placeholder</span></div>
     </div>
+    <div class="bar reveal" aria-label="Allocation placeholder"><span style="--w:90%">Liquidity / Fair launch 90%</span><span style="--w:10%">Marketing 10%</span></div>
   </div>
 </section>
 
-<section class="section yellow" id="community">
+<section class="section yellow edge" id="community">
+  <img class="edge-pose right low" src="assets/poses/pose4.png" alt="" width="744" height="1400" loading="lazy">
   <div class="wrap center">
     <img class="comm-logo reveal" src="assets/logo.png" alt="" width="160" height="160">
     <h2 class="title reveal">Join the <em>Milk Club</em></h2>
