@@ -170,20 +170,20 @@ h1{font-family:Bangers,cursive;font-size:clamp(3rem,8vw,6.4rem);line-height:.9;l
 .hero-banner{position:relative;z-index:1;margin-top:40px}
 .edge{overflow:hidden}
 .edge .wrap{position:relative;z-index:2}
-.edge-pose{position:absolute;z-index:1;bottom:0;height:min(620px,80%);width:auto;filter:drop-shadow(8px 8px 0 #0d0d0d);transition:transform .9s cubic-bezier(.2,1.5,.4,1),opacity .6s;opacity:0;pointer-events:auto}
-.edge-pose.right{right:-30px;transform:translateX(70%) rotate(8deg)}
-.edge-pose.left{left:-40px;transform:translateX(-70%) rotate(-8deg)}
+.edge-pose{position:absolute;z-index:1;bottom:18px;height:min(600px,76%);width:auto;max-width:none;filter:drop-shadow(8px 8px 0 #0d0d0d);transition:transform .9s cubic-bezier(.2,1.5,.4,1),opacity .6s;opacity:0;pointer-events:auto}
+.edge-pose.right{right:18px;transform:translateX(70%) rotate(8deg)}
+.edge-pose.left{left:18px;height:min(540px,72%,calc(50vw * 1.395 - 541px));transform:translateX(-70%) rotate(-8deg)}
 .edge-pose.in{opacity:1;transform:none}
 .edge-pose.in:hover{transform:translateY(-14px) rotate(-3deg) scale(1.03)}
-.edge-pose.low{height:min(520px,85%)}
-#about .wrap{padding-right:280px}
-#buy .steps{margin-left:200px}
+.edge-pose.low{height:min(500px,78%);bottom:28px}
+#about .wrap{padding-right:300px}
+#buy .steps{margin-left:220px}
 #buy .wrap{padding-bottom:0}
 @media (max-width:1200px){#about .wrap{padding-right:20px}#buy .steps{margin-left:0}.edge-pose{opacity:.0}.edge-pose.in{opacity:.25}}
 @media (max-width:820px){
   .hero-pose{margin:10px auto -90px;max-width:100%}
   .hero-pose .pose{height:min(560px,70vh)}
   .hero-grid{grid-template-columns:1fr}
-  .edge-pose{height:300px}.edge-pose.in{opacity:.18}
+  .edge-pose,.edge-pose.left,.edge-pose.low{height:280px;bottom:10px}.edge-pose.in{opacity:.18}
 }
 @media (prefers-reduced-motion:reduce){.edge-pose{opacity:1;transform:none}}
